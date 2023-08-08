@@ -118,8 +118,8 @@ import FieldsList from '../lists/FieldsList';
  * @function WidgetContentManage
  * @category Composant / widgets
  * @param props.fields {Field[]} tableau de champs
- * @param props.updateButtons {} ?
- * @param props.widgetState {} ?
+ * @param props.updateButtons {function} fonction permettant de modifier les boutons dans l'en-tête du widget
+ * @param props.widgetState {function} fonction permettant de modifier le "state" du contenu du widget
  */
 export default function WidgetContentManage(props: any) {
   require('./WidgetContentManage.css');

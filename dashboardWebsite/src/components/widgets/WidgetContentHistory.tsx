@@ -17,7 +17,7 @@ import {Field, Cover} from '../../architecture/architecture';
  * @function WidgetContentHistory
  * @category Composant / widgets
  * @param props.fields {Field[]} tableau de champs
- * @param props.updateButtons {} ?
+ * @param props.updateButtons {function} fonction permettant de modifier les boutons dans l'en-tête du widget
  */
 export default function WidgetContentHistory(props: any) {
   require('./WidgetContentHistory.css');

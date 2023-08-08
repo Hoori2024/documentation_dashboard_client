@@ -24,8 +24,8 @@ import { cancelScheduledCover, createScheduledCover, editScheduledCover } from '
  * @function WidgetContentScheduler
  * @category Composant / widgets
  * @param props.fields {Field[]} tableau de champs
- * @param props.updateButtons {} ?
- * @param props.widgetState {} ?
+ * @param props.updateButtons {function} fonction permettant de modifier les boutons dans l'en-tête du widget
+ * @param props.widgetState {function} fonction permettant de modifier le "state" du contenu du widget
  */
 export default function WidgetContentScheduler(props: any) {
   require('./WidgetContentScheduler.css');
