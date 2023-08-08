@@ -1,0 +1,16 @@
+@import '../../assets/vars/vars.css';
+
+.widget-maincontainer {
+    /* overflow: hidden; */
+    min-width: 690px;
+}
+
+.widget-content {
+    height: 370px;
+    border-color: var(--dark-green);
+    border-width: 4px;
+    border-style: solid;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    overflow: hidden;
+}

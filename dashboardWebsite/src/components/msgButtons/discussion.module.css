@@ -1,0 +1,51 @@
+.buttonPosition {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    width: 20%;
+    background-color: white;
+    border: solid 1px;
+}
+
+.chatBox{
+    width: 100%;
+    margin-right: 2%;
+    max-height: 250px;
+    overflow-y: scroll;
+}
+
+.adminTextPosition{
+    max-width: 65%;
+    margin-left: 2%;
+
+}
+
+.adminTextColor{
+    background-color: rgba(118, 151, 118, 0.85);
+    padding: 5%;
+
+}
+
+.userTextPosition {
+    margin-left: 40%;
+    max-width: 65%;
+    margin-right: 2%;
+}
+
+.userTextColor {
+    background-color: rgba(118, 151, 118, 0.5);
+    padding: 5%;
+}
+
+.inputStyle {
+    width: 85%;
+    height: 40px;
+    border: none;
+    border-top: solid 1px;
+    border-right: solid 1px;
+}
+
+.inputPosition {
+    display: flex;
+    width: 100%;
+}    

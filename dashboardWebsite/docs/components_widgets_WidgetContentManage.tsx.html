@@ -1,0 +1,731 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hoori - Dashboard Client components/widgets/WidgetContentManage.tsx</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">Hoori - Dashboard Client</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="Search docs..." class="input">
+                </div>
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"></div><div class="category"><h2>Composant</h2><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#Notif_Handler">Notif_Handler</a></li></ul></div><div class="category"><h2>Composant / buttons</h2><h3>Global</h3><ul><li><a href="global.html#AddBtn">AddBtn</a></li><li><a href="global.html#CloseBtn">CloseBtn</a></li><li><a href="global.html#HeaderBtn">HeaderBtn</a></li><li><a href="global.html#IconTextButton">IconTextButton</a></li><li><a href="global.html#ManageCoverBtn">ManageCoverBtn</a></li><li><a href="global.html#SortBtn">SortBtn</a></li></ul></div><div class="category"><h2>Composant / elements</h2><h3>Global</h3><ul><li><a href="global.html#Chart">Chart</a></li><li><a href="global.html#DaturaInfo">DaturaInfo</a></li><li><a href="global.html#FieldIdCard">FieldIdCard</a></li><li><a href="global.html#FieldShape">FieldShape</a></li><li><a href="global.html#FieldShapeLegend">FieldShapeLegend</a></li><li><a href="global.html#ImageViewer">ImageViewer</a></li><li><a href="global.html#NotificationBubble">NotificationBubble</a></li><li><a href="global.html#ProgressBar">ProgressBar</a></li><li><a href="global.html#TimeInfo">TimeInfo</a></li><li><a href="global.html#WeatherIcon">WeatherIcon</a></li><li><a href="global.html#WeatherViewer">WeatherViewer</a></li></ul></div><div class="category"><h2>Composant / footer</h2><h3>Global</h3><ul><li><a href="global.html#Footer">Footer</a></li></ul></div><div class="category"><h2>Composant / header</h2><h3>Global</h3><ul><li><a href="global.html#Navbar">Navbar</a></li><li><a href="global.html#WidgetHeader">WidgetHeader</a></li></ul></div><div class="category"><h2>Composant / lists</h2><h3>Global</h3><ul><li><a href="global.html#FieldsList">FieldsList</a></li><li><a href="global.html#ListTools">ListTools</a></li><li><a href="global.html#SearchBar">SearchBar</a></li></ul></div><div class="category"><h2>Composant / modals</h2><h3>Global</h3><ul><li><a href="global.html#AlertModal">AlertModal</a></li><li><a href="global.html#ContactUsModal">ContactUsModal</a></li><li><a href="global.html#ImageViewerModal">ImageViewerModal</a></li><li><a href="global.html#ImageViewerSignalModal">ImageViewerSignalModal</a></li></ul></div><div class="category"><h2>Composant / screens</h2><h3>Global</h3><ul><li><a href="global.html#DronePage">DronePage</a></li><li><a href="global.html#SettingPage">SettingPage</a></li></ul></div><div class="category"><h2>Composant / screens / DronePage</h2><h3>Global</h3><ul><li><a href="global.html#DroneList">DroneList</a></li><li><a href="global.html#DronePage">DronePage</a></li></ul></div><div class="category"><h2>Composant / widgets</h2><h3>Global</h3><ul><li><a href="global.html#Widget">Widget</a></li><li><a href="global.html#WidgetContentEvolution">WidgetContentEvolution</a></li><li><a href="global.html#WidgetContentHistory">WidgetContentHistory</a></li><li><a href="global.html#WidgetContentManage">WidgetContentManage</a></li><li><a href="global.html#WidgetContentScheduler">WidgetContentScheduler</a></li></ul></div><div class="category"><h2>Fonction / API</h2><h3>Global</h3><ul><li><a href="global.html#cancelScheduledCover">cancelScheduledCover</a></li><li><a href="global.html#createField">createField</a></li><li><a href="global.html#createScheduledCover">createScheduledCover</a></li><li><a href="global.html#editScheduledCover">editScheduledCover</a></li><li><a href="global.html#getAllFields">getAllFields</a></li><li><a href="global.html#getDaturaPositions">getDaturaPositions</a></li><li><a href="global.html#getFieldForecast">getFieldForecast</a></li><li><a href="global.html#getFieldsList">getFieldsList</a></li><li><a href="global.html#getMaxColList">getMaxColList</a></li><li><a href="global.html#getOldFieldForecast">getOldFieldForecast</a></li><li><a href="global.html#getPastCoversList">getPastCoversList</a></li><li><a href="global.html#getScaledFieldShape">getScaledFieldShape</a></li><li><a href="global.html#getScheduledCoversList">getScheduledCoversList</a></li><li><a href="global.html#launchCover">launchCover</a></li><li><a href="global.html#pauseCover">pauseCover</a></li><li><a href="global.html#reportPicture">reportPicture</a></li><li><a href="global.html#resumeCover">resumeCover</a></li><li><a href="global.html#setCoversForecasts">setCoversForecasts</a></li><li><a href="global.html#setPastCoverAsRead">setPastCoverAsRead</a></li><li><a href="global.html#stopCover">stopCover</a></li></ul></div><div class="category"><h2>Fonction / API / Weather</h2><h3>Global</h3><ul><li><a href="global.html#getMainWeather">getMainWeather</a></li><li><a href="global.html#getWeather5NextDays">getWeather5NextDays</a></li></ul></div><div class="category"><h2>Fonctions</h2><h3>Global</h3><ul><li><a href="global.html#fieldData">fieldData</a></li><li><a href="global.html#getFieldId">getFieldId</a></li><li><a href="global.html#logout">logout</a></li><li><a href="global.html#putFieldName">putFieldName</a></li><li><a href="global.html#userData">userData</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>components/widgets/WidgetContentManage.tsx</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { useState, useEffect } from 'react';
+
+import dayjs, {Dayjs} from 'dayjs';
+
+import {CoverState, Duration, Field, Cover} from '../../architecture/architecture';
+import {getTimeDifference, isGoodTimeSlot, getRecommendedTimeSlot, formatTimeSlot,
+  sortFieldByName, sortFieldbyState, getNamed, formatDuration, 
+  formatTimeSlotShort, getFieldById, getLastUnreadCover, getNextScheduledCover} from '../../assets/utils';
+import { stopCover, cancelScheduledCover, createScheduledCover, launchCover,
+  pauseCover, resumeCover, setPastCoverAsRead } from '../../api/Api';
+
+import ManageCoverBtn from '../buttons/ManageCoverBtn';
+import FieldIdCard from '../elements/FieldIdCard';
+import TimeInfo from '../elements/TimeInfo';
+import ProgressBar from '../elements/ProgressBar';
+import ImageViewer from '../elements/ImageViewer';
+import AlertModal from '../modals/AlertModal';
+import DaturaInfo from '../elements/DaturaInfo';
+import FieldsList from '../lists/FieldsList';
+
+/**
+ * Widget de gestion de couverture
+ * @function WidgetContentManage
+ * @category Composant / widgets
+ * @param props.fields {Field[]} tableau de champs
+ * @param props.updateButtons {} ?
+ * @param props.widgetState {} ?
+ */
+export default function WidgetContentManage(props: any) {
+  require('./WidgetContentManage.css');
+
+  let buttons = [
+    {
+      title: 'Nom',
+      onClick: (asc: boolean) => {setSortMode({idx: 0, ascend: asc})},
+      sortFunction: sortFieldByName,
+      disabled: false,
+    },
+    {
+      title: 'Statut',
+      onClick: (asc: boolean) => {setSortMode({idx: 1, ascend: asc})},
+    sortFunction: sortFieldbyState,
+      disabled: false,
+    },
+  ];
+
+  const buttonsHeader = {
+    finish: {
+      title: 'Terminer',
+      onClick: handleClickOnFinish,
+    },
+    back: {
+      title: 'Retour',
+      onClick: handleClickOnBack,
+    },
+  }
+
+  // Display
+  const [currentPage, setCurrentPage] = useState(0);
+  const [currentField, setCurrentField] = useState&lt;any>(null);
+  const [displayedCover, setDisplayedCover] = useState&lt;any>(null);
+  const [displayedFields, setDisplayedFields] = useState(props.fields);
+  const [recommendedSlot, setRecommendedSlot] = useState&lt;{startDate: Dayjs | null, endDate: Dayjs | null} | null>(null);
+
+  // Modals
+  const [modalInterrupt, setModalInterrupt] = useState(false);
+  const [modalBadMeteoAlert, setModalBadMeteoAlert] = useState(false);
+  const [modalSuccessProgram, setModalSuccessProgram] = useState(false);
+  const [cancelConfirmModal, setCancelConfirmModal] = useState(false);
+
+  // Filtering and sorting
+  const [searchFilter, setSearchFilter] = useState&lt;string | null>(null);
+  const [sortMode, setSortMode] =
+    useState&lt;{idx: number, ascend: boolean}>({idx: 0, ascend: true});
+
+  useEffect(() => {
+    setSearchFilter(null);
+    setSortMode({idx: 0, ascend: true});
+  }, []);
+
+  useEffect(() => {
+    // Setting the new cover to display
+    let newCover = getCoverToDisplay(currentField);
+    setDisplayedCover(newCover);    
+  }, [currentField]);
+
+  // Filtering and sorting the list when needed:
+  useEffect(() => {
+    var filteredList = getNamed(props.fields, searchFilter);
+    var sortingFunction = buttons[sortMode.idx].sortFunction;
+    setDisplayedFields(sortingFunction(filteredList, sortMode.ascend))
+  }, [searchFilter, sortMode, props.fields]);
+
+  const functionsLabels: { [K: string]: Function } = {
+    setCurrentPage: setCurrentPage,
+    /* setNewField: setNewField, */
+  }
+
+  useEffect(() => {
+    if (currentPage == 0) {
+      setCurrentField(null);
+      props.updateButtons([]);
+    } else if (!displayedCover) {
+      props.updateButtons([buttonsHeader['back']]);
+    } else {
+      if (displayedCover.state == CoverState.DONE ||
+        displayedCover.state == CoverState.INTERRUPT) {
+          props.updateButtons([buttonsHeader['finish'], buttonsHeader['back']]);
+      } else {
+        props.updateButtons([buttonsHeader['back']]);
+      }
+    }
+    
+  }, [currentPage]);
+
+  useEffect(() => {
+    if (displayedCover?.state == CoverState.DONE ||
+      displayedCover?.state == CoverState.INTERRUPT) {
+        props.updateButtons([buttonsHeader['finish'], buttonsHeader['back']]);
+    }
+  }, [displayedCover]);
+
+  // oublié
+  useEffect(() => {
+    props.widgetState.map((item: any) => {
+      let functionLabel: any = functionsLabels[item.functionLabel];
+      functionLabel(eval(item.value));
+    })
+  }, [props.widgetState]);
+
+  function getCoverToDisplay(field: Field) {
+    if (!field)
+      return null;
+
+    // If there is an unread cover:
+    if (field.pastCovers &amp;&amp; field.pastCovers.length > 0) {
+      let lastUnreadCover = getLastUnreadCover(field.pastCovers);
+      if (lastUnreadCover)
+        return lastUnreadCover;
+    }
+
+    // If there is an ongoing cover:
+    if (field.currentCover)
+      return field.currentCover;
+    
+    // If there is a scheduled cover:
+    if (field.scheduledCovers &amp;&amp; field.scheduledCovers.length > 0) {
+      let nextScheduledCover = getNextScheduledCover(field.scheduledCovers);
+      if (nextScheduledCover)
+        return nextScheduledCover;
+    }
+
+    return null;
+  }
+
+  function onChangeSearch(search: string) {
+    setSearchFilter(search);
+  }
+
+  function updateState(newState: any) { // TODO: remove ?
+    let currentFieldCopy = currentField;
+
+    /* if (newState == CoverState.DONE ||
+        newState == CoverState.INTERRUPT) {
+            props.updateButtons([buttonsHeader['finish'], buttonsHeader['back']]);
+    } else {
+        props.updateButtons([buttonsHeader['back']]);
+    } */
+  }
+
+  function handleClickOnCancel() {
+    setCancelConfirmModal(true);
+  }
+
+  function handleClickOnLaunch() {
+    if (!isGoodTimeSlot(dayjs(), currentField)) { // if the weather conditions are not ok
+      let recommendedTimeSlot = getRecommendedTimeSlot(null, currentField);
+      setRecommendedSlot(recommendedTimeSlot);
+      setModalBadMeteoAlert(true);
+    } else
+      launchCover(currentField.id).then(response => {});
+  }
+
+  function handleClickOnProgram() {
+    props.setWidgetState(1, [
+        {functionLabel: 'setNewField', value: currentField!['id']},
+        {functionLabel: 'setCurrentPage', value: 2}
+    ]);
+  }
+
+  function handleClickOnEdit() {
+    props.setWidgetState(1, [
+        {functionLabel: 'setNewField', value: currentField!['id']},
+        {functionLabel: 'setCurrentPage', value: 2}
+    ]);
+  }
+
+  function handleClickOnBack() {
+    setCurrentPage(0);
+  }
+
+  function cancelScheduled() {
+    cancelScheduledCover(displayedCover.fieldId, displayedCover.id).then(response => {
+      console.log("cancelScheduledCover");
+      console.log(response);
+      setDisplayedCover(getCoverToDisplay(currentField));
+  });
+  }
+  
+  function handleClickOnPause() {
+    //displayedCover.state = CoverState.PAUSE;
+    pauseCover(currentField.id).then(response => {
+        console.log("pauseCover");
+        console.log(response);
+    });
+  }
+
+  function handleClickOnStop() {
+    //displayedCover.state = CoverState.INTERRUPT;
+    setModalInterrupt(true);
+  }
+  
+  function handleClickOnConfirmForModalInterrupt() {
+    stopCover(currentField.id).then(response => {
+        console.log("stopCover");
+        console.log(response);
+        setModalInterrupt(false);
+    });
+  }
+
+  function handleClickOnResume() {
+    //displayedCover.state = CoverState.PROGRESS;
+    resumeCover(currentField.id).then(response => {
+        console.log("resumeCover");
+        console.log(response);
+    });
+  }
+
+  function handleClickOnFinish() {
+    setPastCoverAsRead(displayedCover.fieldId, displayedCover.id).then(response => {
+      console.log("handleClickOnFinish");
+      console.log(response);
+      setDisplayedCover(getCoverToDisplay(currentField));
+  }); 
+  }
+
+
+  function handleClickOnRefresh() {
+    //setOpenNoDroneModal(false);
+    setDisplayedCover(getCoverToDisplay(currentField));
+  }
+
+  function handleClickOnField(id: string) {
+    let tmpfield = getFieldById(id, props.fields);
+    setCurrentField(tmpfield);
+    /* if (tmpfield?.currentCover != null) {
+        updateState(tmpfield?.currentCover.state);
+    } else if (tmpfield?.pastCovers != null) {
+        let size = tmpfield?.pastCovers?.length;
+        if (size > 0) {
+            updateState(tmpfield.pastCovers.at(size - 1));
+        }
+    } */
+    setCurrentPage(1);
+  }
+
+  function getFormattedRecommendedTimeSlot() {
+    if (!currentField || !currentField.weather)
+      return "Aucun créneau recommandé n'a pu être trouvé.";
+
+    let start = recommendedSlot?.startDate;
+    let end = recommendedSlot?.endDate;
+    
+    if (!start || !end)
+      return "Aucun créneau recommandé n'a pu être trouvé.";
+      
+    let formatted = "Nous vous recommandons le créneau suivant :\n";
+    formatted += formatTimeSlot(start, end);
+    return formatted;
+  }
+
+  let cancelConfirm =
+    &lt;AlertModal
+      open={cancelConfirmModal}
+      close={() => {setCancelConfirmModal(false)}}
+      title="Êtes-vous sur(e) de vouloir annuler la couverture programmée ?"
+      message={""}
+      btnNegative={{title: "Retour", onClick: () => {setCancelConfirmModal(false)}}}
+      btnPositive={{title: "Confirmer", onClick: () => {setCancelConfirmModal(false); cancelScheduled();}}}
+    />
+
+  let interruption = 
+    &lt;AlertModal
+      open={modalInterrupt}
+      close={() => {setModalInterrupt(false)}}
+      title="Êtes-vous sur(e) de vouloir stopper la couverture en cours ?"
+      message={''}
+      btnNegative={{title: "Retour", onClick: () => setModalInterrupt(false)}}
+      btnPositive={{title: "Confirmer", onClick: handleClickOnConfirmForModalInterrupt}}
+    />
+
+  function handleLaunchOnBadTimeSlot() {
+    launchCover(currentField.id).then(response => {
+        setModalBadMeteoAlert(false);
+    });
+  }
+
+  function handleProgramRecommendedTimeSlot() {
+    if (!recommendedSlot || !recommendedSlot.startDate)
+      return;
+    createScheduledCover(currentField.id, recommendedSlot.startDate).then(response => {
+        setModalBadMeteoAlert(false);
+        setModalSuccessProgram(true);
+    });
+  }
+
+  function getDurationPercentage(startDate: Dayjs, endDate: Dayjs) {
+    let totalDuration = Math.abs(startDate.diff(endDate));
+    let currentProgress = Math.abs(startDate.diff(dayjs()));
+
+    if (totalDuration &lt;= 0 || currentProgress &lt;= 0)
+      return (0);
+
+    if (currentProgress > totalDuration)
+      return (90);
+
+    let percentage = (currentProgress / totalDuration) * 100;
+
+    return percentage;
+  }
+
+  function getFormattedTimeProgress(startDate: Dayjs, duration: Duration) {
+    function formatDur(dur: Duration) {
+      let str: string = "";
+      if (dur.hours > 0 || dur.days > 0) { // {1day, 1h, 1m, 1s} -> 25h2m
+        str += ((dur.hours + dur.days * 24) + "h");
+        if (dur.minutes > 0 || dur.seconds > 0)
+          str += (dur.minutes + (dur.seconds != 0 ? 1 : 0) + 'm');
+      } else { // {0day, 0h, 1m, 1s} -> 2m
+        //if (dur.minutes > 0)
+          str += (dur.minutes + (dur.seconds != 0 ? 1 : 0) + "m");
+      }
+      return str;
+    }
+
+    let currentProgress: Duration = getTimeDifference(startDate, dayjs());
+    let formatted: string = (formatDur(currentProgress) + ' / ' + formatDur(duration));
+    return formatted;
+
+  }
+
+  function BadWeatherModal(props: any) {
+    return (
+      &lt;AlertModal
+        open={modalBadMeteoAlert}
+        close={() => {setModalBadMeteoAlert(false)}}
+        title="Attention !"
+        message={`Le créneau choisi comporte des prédictions météorologiques incompatibles avec l’utilisation du drone Hoori.\n${getFormattedRecommendedTimeSlot()}`}
+        btnNegative={{title: "Annuler", onClick: () => {setModalBadMeteoAlert(false)}}}
+        btnNeutral={{title: "Conserver le créneau choisi", onClick: handleLaunchOnBadTimeSlot}}
+        btnPositive={(recommendedSlot?.startDate &amp;&amp; recommendedSlot?.endDate) ?
+          {title: "Choisir le créneau recommandé", onClick: handleProgramRecommendedTimeSlot}
+          : null}
+      />
+    );
+  }    
+
+  let successfullyProgrammed = (recommendedSlot ? 
+    &lt;AlertModal
+      open={modalSuccessProgram}
+      title="Couverture programmée avec succès"
+      message={`La couverture a bien été programmée sur le créneau suivant :\n${formatTimeSlot(recommendedSlot.startDate, recommendedSlot.endDate)}`}
+      btnPositive={{
+        title:"Ok",
+        onClick: () => setModalSuccessProgram(false)
+      }}
+    />
+    : null)
+
+  function ReadyToLaunch() {
+    require('./WidgetContentReady.css')
+    return (
+      &lt;div className="widgetcontentready-righthalf">
+        &lt;BadWeatherModal/>
+        {successfullyProgrammed}
+        &lt;div className="widgetcontentready-infoscontainer">
+          &lt;a> PRÊTE À LANCER &lt;/a>
+          &lt;TimeInfo
+            TextDim={22}
+            IconDim={22}
+            type={'TIMER'}
+            text={formatDuration(currentField.estimatedDuration,
+              currentField.estimatedDuration.hours + currentField.estimatedDuration.days > 0 ? "hm" : "m")}
+          />
+        &lt;/div>
+        &lt;div className='widgetcontentready-btnscontainer'>
+          &lt;ManageCoverBtn
+            type={'LAUNCH'}
+            TextDim={18}
+            IconDim={100}
+            callBack={() => handleClickOnLaunch()}
+          />
+          &lt;ManageCoverBtn
+            type={'PROGRAM'}
+            TextDim={18}
+            IconDim={100}
+            callBack={() => handleClickOnProgram()}
+          />
+        &lt;/div>
+      &lt;/div>
+    );
+  }
+
+  function Content(props: any) {
+
+    if (!currentField)
+      return &lt;>&lt;/>
+
+    if (currentField.droneId == null) {
+      require('./WidgetContentNoDrone.css')
+      return (
+        &lt;div className="WidgetContentNoDrone-righthalf">
+            &lt;div className="WidgetContentNoDrone-container">
+              &lt;a> AUCUN DRONE DÉTECTÉ &lt;/a>
+              &lt;div className="imageviewer-containertextnodatura">
+                &lt;div className="WidgetContentNoDrone-text"> Pour lancer une couverture sur ce champ, veuillez installer le drone sur sa base. &lt;/div>
+              &lt;/div>
+            &lt;/div>
+            {/* &lt;div className='WidgetContentNoDrone-refresh'>
+              &lt;ManageCoverBtn type={'REFRESH'} TextDim={20} IconDim={80} callBack={() => handleClickOnRefresh()}/>
+            &lt;/div> */}
+        &lt;/div>
+      );
+    }
+
+    if (!displayedCover) {
+      //console.log("no cover to display");
+      return &lt;ReadyToLaunch/>;
+    }
+
+    if (displayedCover.state == CoverState.SCHEDULED) {
+      require('./WidgetContentProgram.css')
+      return (
+        &lt;div className="widgetcontentprogram-righthalf">
+          {successfullyProgrammed}
+          &lt;BadWeatherModal/>
+          &lt;div className="widgetcontentprogram-infoscontainer">
+            &lt;a className='widgetcontentprogram-infotitle'>PROGRAMMÉE&lt;/a>
+            &lt;div className="widgetcontentprogram-infosubcontainer">
+              &lt;TimeInfo
+                TextDim={22}
+                IconDim={22}
+                type={'DATE'}
+                text={formatTimeSlotShort(displayedCover.startDate, displayedCover.endDate)}
+              />
+              &lt;TimeInfo
+                TextDim={22}
+                IconDim={22}
+                type={'TIMER'}
+                text={formatDuration(currentField.estimatedDuration,
+                  currentField.estimatedDuration.hours + currentField.estimatedDuration.days > 0 ? "hm" : "m")}
+              />
+            &lt;/div>
+          &lt;/div>
+          &lt;div className='widgetcontentprogram-btnscontainer'>
+            {cancelConfirm}
+            &lt;ManageCoverBtn type={'LAUNCH'} TextDim={17} IconDim={100} callBack={handleClickOnLaunch}/>
+            &lt;ManageCoverBtn type={'EDIT'} TextDim={17} IconDim={100} callBack={handleClickOnEdit}/>
+            &lt;ManageCoverBtn type={'CANCEL'} TextDim={17} IconDim={100} callBack={handleClickOnCancel}/>
+          &lt;/div>
+        &lt;/div>
+      );
+    }
+
+    if (displayedCover.state == CoverState.PROGRESS) {
+      require('./WidgetContentProgress.css')
+      return (
+        &lt;div className="widgetcontentprogress-righthalf">
+          {interruption}
+          &lt;div className="widgetcontentprogress-infoscontainer">
+            &lt;a>EN COURS&lt;/a>
+          &lt;/div>
+          &lt;div className='widgetcontentprogress-pb'>
+            &lt;ProgressBar
+              text={getFormattedTimeProgress(displayedCover.startDate, displayedCover.estimatedDuration)}
+              textSize={20}
+              value={getDurationPercentage(displayedCover.startDate, displayedCover.endDate)}
+            />
+          &lt;/div>
+          &lt;div className='widgetcontentprogress-btnscontainer'>
+            &lt;ManageCoverBtn type={'PAUSE'} TextDim={20} IconDim={90} callBack={() => handleClickOnPause()}/>
+            &lt;ManageCoverBtn
+              type={'STOP'}
+              TextDim={20} IconDim={90}
+              callBack={() => handleClickOnStop()}
+              />
+          &lt;/div>
+        &lt;/div>
+      );
+    }
+
+    if (displayedCover.state == CoverState.PAUSE) {
+      require('./WidgetContentPause.css')
+      return (
+        &lt;div className="widgetcontentpause-righthalf">
+          {interruption}
+          &lt;div className="widgetcontentpause-infoscontainer">
+            &lt;a>EN PAUSE&lt;/a>
+          &lt;/div>
+          &lt;div className='widgetcontentpause-pb'>
+            &lt;ProgressBar
+              text={getFormattedTimeProgress(displayedCover.startDate, displayedCover.estimatedDuration)}
+              textSize={20}
+              value={getDurationPercentage(displayedCover.startDate, displayedCover.endDate)}
+            />
+          &lt;/div>
+          &lt;div className='widgetcontentpause-btnscontainer'>
+            &lt;ManageCoverBtn type={'RESUME'} TextDim={20} IconDim={90} callBack={() => handleClickOnResume()}/>
+            &lt;ManageCoverBtn type={'STOP'} TextDim={20} IconDim={90} callBack={() => handleClickOnStop()}/>
+          &lt;/div>
+        &lt;/div>
+      );
+    }
+
+    if (displayedCover.state == CoverState.DONE) {
+      require('./WidgetContentFinish.css')
+      return (
+        &lt;div className="widgetcontentfinish-righthalf">
+          &lt;div className="widgetcontentfinish-infoscontainer">
+            &lt;a>DÉTECTION TERMINÉE&lt;/a>
+            &lt;div className='widgetcontentfinish-resultcontainer'>
+              &lt;DaturaInfo number={displayedCover.nbDatura}/>
+            &lt;/div>
+          &lt;/div>
+          &lt;ImageViewer
+            pictureList={displayedCover.pictures}
+            fieldId={currentField.id}
+            coverId={displayedCover.id}
+          />
+        &lt;/div>
+      );
+    }
+
+    if (displayedCover.state == CoverState.INTERRUPT) {
+      require('./WidgetContentFinish.css')
+      return (
+        &lt;div className="widgetcontentfinish-righthalf">
+          &lt;div className="widgetcontentfinish-infoscontainer">
+            &lt;a>DÉTECTION INTERROMPUE&lt;/a>
+            &lt;div className='widgetcontentfinish-resultcontainer'>
+              &lt;DaturaInfo number={displayedCover.nbDatura}/>
+            &lt;/div>
+          &lt;/div>
+          &lt;ImageViewer
+            pictureList={currentField!['pictures']}
+            fieldId={currentField.id}
+            coverId={displayedCover.id}
+          />
+        &lt;/div>
+      );
+    }
+
+    if (displayedCover.state = CoverState.READY) {
+      console.log('Error: cover state is READY')
+      return &lt;ReadyToLaunch/>;
+    }
+    return &lt;>&lt;/>;
+  }
+
+  if (currentPage == 0) {
+    return (
+      &lt;div className="widgetcontentready-infoscontainer">
+        &lt;FieldsList
+          list={displayedFields}
+          fields={props.fields}
+          buttons={buttons}
+          onChangeSearch={onChangeSearch}
+          showState
+          onClick={handleClickOnField}
+        />
+      &lt;/div>
+    )
+  }
+  
+  let datura = null;
+  let legend = false;
+
+  if (displayedCover &amp;&amp;
+  (displayedCover.state === CoverState.DONE || displayedCover.state === CoverState.INTERRUPT))
+    legend = true;
+  if (displayedCover)
+    datura = displayedCover.daturaPositions;
+
+  return (
+    &lt;div className="widgetcontentmanage-maincontainer">
+      &lt;FieldIdCard
+        name={currentField.name}
+        shape={currentField.shape}
+        datura={datura}
+        defaultLegend={legend}
+      />
+      &lt;Content updateButtons={props.updateButtons}/>
+    &lt;/div>
+  );
+};</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+@import '../../assets/vars/vars.css';
+
+.IconTextButton-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.IconTextButton-text {
+    color: var(--grey-font);
+    border-color: var(--grey-font);
+    font-style: var(--hoori-font);
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.IconTextButton-button {
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid;
+    border-color: var(--grey-font);
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}

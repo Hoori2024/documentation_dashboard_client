@@ -1,0 +1,59 @@
+@import '../../../assets/vars/vars.css';
+
+.dronelist-main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.dronelist-elem {
+    display: flex;
+    flex: 1;
+
+    justify-content: space-between;
+    padding-left: 4%;
+    padding-right: 4%;
+
+    font-size: 35px;
+    font-style: border;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    background-color: var(--grey-bg);
+
+    border-bottom: 2px;
+    border-style: none none solid none;
+    border-color: var(--dark-green);
+
+    color: var(--dark-green);
+
+    align-items: center;    
+}
+
+.debugo {
+    display: flex;
+    flex: 1;
+    font-size: 25px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.dronelist-reportbutton {
+    border: none none none none;
+    border-style: none;
+    color: var(--grey-bg);
+    background-color: var(--dark-green);
+    border-radius: 10px;
+    cursor: pointer;
+    height: fit-content;
+    padding: 10px
+;}
+
+.dronelist-reportbutton:hover {
+    opacity: 75%;
+}
+
+.dronelist-reportbutton:active {
+    background-color: red;
+}

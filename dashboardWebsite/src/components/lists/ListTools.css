@@ -1,0 +1,30 @@
+@import '../../assets/vars/vars.css';
+
+.ListTools-Box {
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+
+    align-content: center;
+    align-items: center;
+
+    border-bottom-style: solid;
+    border-color: var(--dark-green);
+    border-width: 2px;
+}
+
+.listtools-searchbar {
+    width: 50%;
+}
+
+.listtools-buttons {
+   flex: 1;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+}
+
+.listtools-button {
+  margin-left: 6px;
+  margin-right: 6px;
+}

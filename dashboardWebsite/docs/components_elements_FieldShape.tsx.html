@@ -1,0 +1,444 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hoori - Dashboard Client components/elements/FieldShape.tsx</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">Hoori - Dashboard Client</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="Search docs..." class="input">
+                </div>
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"></div><div class="category"><h2>Composant</h2><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#Notif_Handler">Notif_Handler</a></li></ul></div><div class="category"><h2>Composant / buttons</h2><h3>Global</h3><ul><li><a href="global.html#AddBtn">AddBtn</a></li><li><a href="global.html#CloseBtn">CloseBtn</a></li><li><a href="global.html#HeaderBtn">HeaderBtn</a></li><li><a href="global.html#IconTextButton">IconTextButton</a></li><li><a href="global.html#ManageCoverBtn">ManageCoverBtn</a></li><li><a href="global.html#SortBtn">SortBtn</a></li></ul></div><div class="category"><h2>Composant / elements</h2><h3>Global</h3><ul><li><a href="global.html#Chart">Chart</a></li><li><a href="global.html#DaturaInfo">DaturaInfo</a></li><li><a href="global.html#FieldIdCard">FieldIdCard</a></li><li><a href="global.html#FieldShape">FieldShape</a></li><li><a href="global.html#FieldShapeLegend">FieldShapeLegend</a></li><li><a href="global.html#ImageViewer">ImageViewer</a></li><li><a href="global.html#NotificationBubble">NotificationBubble</a></li><li><a href="global.html#ProgressBar">ProgressBar</a></li><li><a href="global.html#TimeInfo">TimeInfo</a></li><li><a href="global.html#WeatherIcon">WeatherIcon</a></li><li><a href="global.html#WeatherViewer">WeatherViewer</a></li></ul></div><div class="category"><h2>Composant / footer</h2><h3>Global</h3><ul><li><a href="global.html#Footer">Footer</a></li></ul></div><div class="category"><h2>Composant / header</h2><h3>Global</h3><ul><li><a href="global.html#Navbar">Navbar</a></li><li><a href="global.html#WidgetHeader">WidgetHeader</a></li></ul></div><div class="category"><h2>Composant / lists</h2><h3>Global</h3><ul><li><a href="global.html#FieldsList">FieldsList</a></li><li><a href="global.html#ListTools">ListTools</a></li><li><a href="global.html#SearchBar">SearchBar</a></li></ul></div><div class="category"><h2>Composant / modals</h2><h3>Global</h3><ul><li><a href="global.html#AlertModal">AlertModal</a></li><li><a href="global.html#ContactUsModal">ContactUsModal</a></li><li><a href="global.html#ImageViewerModal">ImageViewerModal</a></li><li><a href="global.html#ImageViewerSignalModal">ImageViewerSignalModal</a></li></ul></div><div class="category"><h2>Composant / screens</h2><h3>Global</h3><ul><li><a href="global.html#DronePage">DronePage</a></li><li><a href="global.html#SettingPage">SettingPage</a></li></ul></div><div class="category"><h2>Composant / screens / DronePage</h2><h3>Global</h3><ul><li><a href="global.html#DroneList">DroneList</a></li><li><a href="global.html#DronePage">DronePage</a></li></ul></div><div class="category"><h2>Composant / widgets</h2><h3>Global</h3><ul><li><a href="global.html#Widget">Widget</a></li><li><a href="global.html#WidgetContentEvolution">WidgetContentEvolution</a></li><li><a href="global.html#WidgetContentHistory">WidgetContentHistory</a></li><li><a href="global.html#WidgetContentManage">WidgetContentManage</a></li><li><a href="global.html#WidgetContentScheduler">WidgetContentScheduler</a></li></ul></div><div class="category"><h2>Fonction / API</h2><h3>Global</h3><ul><li><a href="global.html#cancelScheduledCover">cancelScheduledCover</a></li><li><a href="global.html#createField">createField</a></li><li><a href="global.html#createScheduledCover">createScheduledCover</a></li><li><a href="global.html#editScheduledCover">editScheduledCover</a></li><li><a href="global.html#getAllFields">getAllFields</a></li><li><a href="global.html#getDaturaPositions">getDaturaPositions</a></li><li><a href="global.html#getFieldForecast">getFieldForecast</a></li><li><a href="global.html#getFieldsList">getFieldsList</a></li><li><a href="global.html#getMaxColList">getMaxColList</a></li><li><a href="global.html#getOldFieldForecast">getOldFieldForecast</a></li><li><a href="global.html#getPastCoversList">getPastCoversList</a></li><li><a href="global.html#getScaledFieldShape">getScaledFieldShape</a></li><li><a href="global.html#getScheduledCoversList">getScheduledCoversList</a></li><li><a href="global.html#launchCover">launchCover</a></li><li><a href="global.html#pauseCover">pauseCover</a></li><li><a href="global.html#reportPicture">reportPicture</a></li><li><a href="global.html#resumeCover">resumeCover</a></li><li><a href="global.html#setCoversForecasts">setCoversForecasts</a></li><li><a href="global.html#setPastCoverAsRead">setPastCoverAsRead</a></li><li><a href="global.html#stopCover">stopCover</a></li></ul></div><div class="category"><h2>Fonction / API / Weather</h2><h3>Global</h3><ul><li><a href="global.html#getMainWeather">getMainWeather</a></li><li><a href="global.html#getWeather5NextDays">getWeather5NextDays</a></li></ul></div><div class="category"><h2>Fonctions</h2><h3>Global</h3><ul><li><a href="global.html#fieldData">fieldData</a></li><li><a href="global.html#getFieldId">getFieldId</a></li><li><a href="global.html#logout">logout</a></li><li><a href="global.html#putFieldName">putFieldName</a></li><li><a href="global.html#userData">userData</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>components/elements/FieldShape.tsx</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { useEffect, useRef } from 'react'
+import { SECTOR_SIZE } from '../../architecture/architecture'; 
+
+function createMap(imgData : ImageData, mapi : any, factor : any) {
+
+    var arrayIndexY = 0;
+    var arrayIndexX = 0;
+
+    var i;
+    var test;
+
+    var three = [255, 40, 40, 255];
+    var two = [255, 95, 95, 255];
+    var one = [255, 182, 182, 255];
+    var base = [118, 151, 118, 255];
+    var none = [255, 255, 255, 0];
+    var select = [0, 0, 0, 0];
+
+    var factIndex = 1;
+
+    imgData.data.fill(10)
+
+    for (i = 0; imgData != null &amp;&amp; i &lt; imgData.data.length &amp;&amp; factor > 0; ) {
+    
+        if (arrayIndexX === mapi[arrayIndexY].length &amp;&amp; i !== 0) {
+            if (factIndex === factor) {
+                arrayIndexY += 1;
+                factIndex = 1;
+            } else {
+                factIndex += 1;
+            }
+            arrayIndexX = 0;
+        }
+        test = -1;
+        if (arrayIndexY &lt; mapi.length &amp;&amp; arrayIndexX &lt; mapi[arrayIndexY].length) {
+            test = mapi[arrayIndexY][arrayIndexX];
+        }
+
+        if (test &lt;= -1) {
+            select = none;
+        }
+        else if (test == 0) {
+            select = base;
+        }
+        else if (test > 0 &amp;&amp; test &lt;= 5) {
+            select = one;
+        }
+        else if (test > 5 &amp;&amp; test &lt;= 10) {
+            select = two;
+        } else {
+            select = three;
+        }
+
+        for (var f = 0; f &lt; factor; f++) {
+            for (var x = 0; x &lt; 4; x++) {
+                imgData.data[i] =  select[x];
+                i += 1;
+            }
+        }
+        if (i % 4 === 0 &amp;&amp; i !== 0) {
+            arrayIndexX += 1;
+        }
+    }
+}
+
+function getMaxSize(mapi: any) {
+    if (mapi === null || mapi.lenght() === 0)
+        return (0);
+    let size = mapi[0].lenght();
+    mapi.forEach((elem: any) => {
+        let test = elem.length();
+        if (test > size) {
+            size = test;
+        }
+    });
+    return (size);
+}
+
+/**
+ * Graphique de forme du champ
+ * @function FieldShape
+ * @category Composant / elements
+ * @param props.shapeInfo {FieldShape} objet de forme du champ (pas le composant)
+ * @param props.datura {DaturaPositions} position du datura
+ */
+export default function FieldShape(props: any) {
+    require('./FieldShape.css')
+    const ref = useRef&lt;HTMLCanvasElement>(null)
+
+    function picIndexToPtCoord(index: number, length_x: number) {
+        let ptIndex = Math.floor(index / 4);
+        let ptCoords: {x: number, y: number} = {x: 0, y: 0};
+        ptCoords.x = ptIndex % length_x; 
+        ptCoords.y = Math.floor(ptIndex / length_x);
+        return ptCoords;
+    }
+
+    function ptCoordToSectorCoord(ptCoords: {x: number, y: number}) {
+        let sectorCoords: {x: number, y: number} = {x: 0, y: 0};
+        sectorCoords.x = Math.floor(ptCoords.x / SECTOR_SIZE);
+        sectorCoords.y = Math.floor(ptCoords.y / SECTOR_SIZE);
+        return sectorCoords;
+    }
+
+    useEffect(() => {
+        
+        var shape = props.shapeInfo.shape;
+        var max_x = props.shapeInfo.max_x;
+        var max_y = props.shapeInfo.max_y;
+        let area = props.datura;
+        
+        /* console.log('shape', shape)
+        console.log("area", area)
+        console.log(max_x, max_y) */
+
+        // Big rectangle 15:
+        /* area = [
+            [1, 0, 1, 0, 1, 0, 1, 0, 1, 0],
+            [0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+            [1, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 1, 0, 0, 0, 0, 0, 0, 1, 0],
+        ]; */
+
+        /* area = [
+            [1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0],
+            [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0],
+            [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1],
+            [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1],
+            [1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0],
+        ];
+        shape = [
+            [ 0, 0, 0 ],
+            [ 0, 0, 190 ],
+            [ 330, 0, 190 ],
+            [ 330, 0, 0 ],
+        ];
+        max_x = 330;
+        max_y = 190;  */
+
+        // Big rectangle 20:
+        /* area = [
+            [1, 0, 1, 0, 1, 0, 1, 0, 1, 0],
+            [0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+            [1, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
+        ]; */
+
+        // Smaller rectangle (works):
+        /* shape = [
+            [ 0, 0, 0 ],
+            [ 0, 0, 120 ],
+            [ 150, 0, 120 ],
+            [ 150, 0, 0 ],
+        ];
+        area = [
+            [1, 0, 1, 0, 1, 0, 1, 0, 1, 0],
+            [0, 1, 0, 0, 0, 0, 0, 0, 0, 1],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 1, 0, 0, 0, 1],
+            [1, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+        ];
+        max_x = 150;
+        max_y = 120; */
+
+        // Triangle:
+        /* shape = [
+            [ 0, 0, 0 ],
+            [ 0, 0, 190 ],
+            [ 200, 0, 0 ],
+        ];
+        area = [
+            [1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0],
+            [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1],
+            [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+            [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+            [1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+        ];
+        max_x = 200;
+        max_y = 190; */
+
+        if (ref.current &amp;&amp; shape) {
+            //ref.current.width += 0;
+
+            //ref.current.setAttribute('width', '250');
+            //ref.current.setAttribute('length', '200');
+
+            var ctx = ref.current.getContext('2d', { willReadFrequently: true })
+
+            if (!ctx)
+                return
+
+            ctx.clearRect(0, 0, 201, 201);
+            ctx.beginPath();
+            ctx.moveTo(shape[0][0], shape[0][2]);
+            for (var i = 0; i &lt; shape.length; i++) {
+                ctx.lineTo(shape[i][0], shape[i][2]);
+            }
+            ctx.fill();
+            ctx.closePath();
+            
+            var imgData = ctx.getImageData(0, 0, max_x + 1, max_y + 1)
+            ctx.clearRect(0, 0, max_x + 1, max_y + 1);
+
+            // L'affichage s'arrête à environ y=135 et x=300
+            for (var i = 0; imgData?.data.length &amp;&amp; i &lt; imgData?.data.length; i+=4) {
+                let ptCoords: {x: number, y: number} = picIndexToPtCoord(i, max_x + 1);
+                let sectorCoords: {x: number, y: number} = ptCoordToSectorCoord(ptCoords);
+                
+                if (imgData.data[i+3] > 80) {
+                    if (area &amp;&amp; area[sectorCoords.y] &amp;&amp; area[sectorCoords.y][sectorCoords.x] != 0) {
+                        if (area[sectorCoords.y][sectorCoords.x] > 0 &amp;&amp; area[sectorCoords.y][sectorCoords.x] &lt;= 5) {
+                            imgData.data[0 + i] = 255;
+                            imgData.data[1 + i] = 182;
+                            imgData.data[2 + i] = 182;
+                            imgData.data[3 + i] = 255;
+                        } else if (area[sectorCoords.y][sectorCoords.x] > 5 &amp;&amp; area[sectorCoords.y][sectorCoords.x] &lt;= 10) {
+                            imgData.data[0 + i] = 255;
+                            imgData.data[1 + i] = 95;
+                            imgData.data[2 + i] = 95;
+                            imgData.data[3 + i] = 255;
+                        } else if (area[sectorCoords.y][sectorCoords.x] > 10) {
+                            imgData.data[0 + i] = 255;
+                            imgData.data[1 + i] = 41;
+                            imgData.data[2 + i] = 41;
+                            imgData.data[3 + i] = 255;
+                        }
+                    }
+                    else {
+                        // VERT
+                        imgData.data[0 + i] = 118;
+                        imgData.data[1 + i] = 151;
+                        imgData.data[2 + i] = 118;
+                        imgData.data[3 + i] = 255;
+                    }
+            }
+        }
+
+            /* var index_map_y = 0;
+            var index_map_x = 0;
+
+            var sector_size_x = SECTOR_SIZE;
+            var sector_size_y = SECTOR_SIZE;
+
+            var index_sector_x = 0;
+            var index_sector_y = 0;
+
+            for (var i = 0; imgData?.data.length &amp;&amp; i &lt; imgData?.data.length; i+=4) {
+                if (index_map_x > max_x) {
+                    index_map_y++;
+                    index_map_x = 0;
+                    index_sector_x = 0;
+                } else {
+                    index_map_x++;
+                }
+                if (index_map_y >= sector_size_y * (index_sector_y + 1)) {
+                    index_sector_y++;
+                    //index_sector_x = 0;
+                }
+                if (index_map_x >= sector_size_x * (index_sector_x + 1)) {
+                    index_sector_x++;
+                }
+
+                if (imgData.data[i+3] > 80) {
+                    if (area != null &amp;&amp; area[index_sector_y][index_sector_x] == 0) {
+                        imgData.data[0 + i] = 118;
+                        imgData.data[1 + i] = 151;
+                        imgData.data[2 + i] = 118;
+                        imgData.data[3 + i] = 255;
+                    } else {
+                        //console.log(index_sector_x, index_sector_y, index_map_x, index_map_y)
+                        imgData.data[0 + i] = 255;
+                        imgData.data[1 + i] = 182;
+                        imgData.data[2 + i] = 182;
+                        imgData.data[3 + i] = 255;
+                    }
+                }
+                //index_map_x++;
+            } */
+            if (imgData)
+                ctx.putImageData(imgData, 60, 0);
+        }
+    }, [props.shapeInfo.shape, props.datura])
+
+    return (
+        &lt;canvas className="fieldshape-canva" ref={ref} />
+    )
+};</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
+
+</body>
+</html>

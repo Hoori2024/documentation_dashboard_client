@@ -1,0 +1,39 @@
+.sortbtn-container {
+    display: flex;
+    border-style: none;
+    background-color: white;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sortbtn-container:hover {
+    opacity: 80%;
+}
+
+.sortbtn-containerdisabled {
+    display: flex;
+    border-style: none;
+    background-color: white;
+    align-items: center;
+    opacity: 80%;
+}
+
+.sortbtn-title {
+    margin-right: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    font-style: var(--hoori-font);
+    color: var(--grey-font);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.sortbtn-icon {
+    margin-top: 1px;
+}
+
+.sortbtn-iconup {
+    margin-top: 1px;
+    transform: rotate(180deg);
+}

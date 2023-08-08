@@ -1,0 +1,33 @@
+{
+    "tags": {
+      "allowUnknownTags": ["category"],
+      "dictionaries": ["jsdoc", "closure"]
+    },
+    "source": {
+      "include": ["src"],
+      "includePattern": "\\.(jsx|js|ts|tsx)$",
+      "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "plugins": [
+        "plugins/markdown",
+        "node_modules/better-docs/typescript",
+        "node_modules/better-docs/category"
+    ],
+    "opts": {
+      "destination": "docs",
+      "recurse": true,
+      "readme": "README.md",
+      "template": "node_modules/better-docs",
+      "verbose": true
+    },
+    "templates": {
+      "search": true,
+      "cleverLinks": false,
+      "monospaceLinks": false,
+      "better-docs": {
+        "hideGenerator": false,
+        "name": "Hoori - Dashboard Client",
+        "title": "Hoori - Dashboard Client"
+      }
+    }
+}

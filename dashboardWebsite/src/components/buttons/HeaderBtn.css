@@ -1,0 +1,38 @@
+@import '../../assets/vars/vars.css';
+
+.headerBtn {
+    flex: 1;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    background-color: transparent;
+    border: none;
+
+    color: var(--grey-logo);
+    font-size: 20px;
+    font-family: var(---hoori-font);
+    font-weight: bold;
+
+    /* text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; */
+
+    cursor: pointer;
+}
+
+.headerBtn:hover {
+    color: white;
+}
+
+@media only screen and (max-width: 1680px){
+    .headerBtn {
+        font-size: 16px;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+}
+
+

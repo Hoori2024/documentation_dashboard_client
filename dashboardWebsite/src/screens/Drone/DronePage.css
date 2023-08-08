@@ -1,0 +1,31 @@
+@import '../../assets/vars/vars.css';
+
+.dronepage-main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.dronepage-legend {
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+
+    background-color: var(--dark-green);
+    color: var(--grey-logo);
+    font-weight: bold;
+
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    padding-left: 4%;
+    padding-right: 4%;
+
+    font-size: 18px;
+}
+
+.dronepage-list {
+    overflow-y: scroll;
+    height: 100%
+}

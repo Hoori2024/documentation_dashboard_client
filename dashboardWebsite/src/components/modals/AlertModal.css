@@ -1,0 +1,87 @@
+.alertmodal-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: none;
+  overflow: scroll;
+}
+
+.alertmodal-maincontainer {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  max-width: 45%;
+  height: fit-content;
+  padding: 32px;
+  background-color: var(--grey-bg);
+  border-color: var(--dark-green);
+  border-width: 4px;
+  border-style: solid;
+  border-radius: 30px;
+}
+
+.alertmodal-title {
+  font-family: var(---hoori-font);
+  color: var(--grey-font);
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.alertmodal-messagediv {
+  margin-top: 32px;
+  margin-bottom: 48px;
+}
+
+.alertmodal-message {
+  white-space: pre-wrap;
+  font-family: var(---hoori-font);
+  color: var(--grey-font);
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.alertmodal-btncontainer {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 10%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.alertmodal-btn {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 24px;
+  padding-left: 24px;
+  border-radius: 22px;
+  border-style: none;
+
+  font-family: var(---hoori-font);
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.alertmodal-btn:hover {
+  opacity: 80%;
+}
+
+.alertmodal-btnnegative {
+  background-color: var(--grey);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.alertmodal-btnneutral {
+  background-color: var(--light-green);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.alertmodal-btnpositive {
+  background-color: var(--dark-green);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

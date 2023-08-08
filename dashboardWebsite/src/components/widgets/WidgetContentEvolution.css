@@ -1,0 +1,69 @@
+@import '../../assets/vars/vars.css';
+
+.widgetcontentevolution-maincontainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex: 1;
+}
+
+.widgetcontentevolution-righthalf {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    align-content: center;
+    gap: 30px;
+    flex: 3;
+}
+
+.widgetcontentevolution-text {
+    color: var(--grey-font);
+    border-color: var(--grey-font);
+    font-style: var(--hoori-font);
+    font-weight: bold;
+    font-size: 20px;
+    max-width: 1000px;
+}
+
+.widgetcontenthistory-formcontrol {
+    display: flex;
+    flex-direction: row;
+}
+
+.widgetcontenthistory-selectright {
+    display: flex;
+    flex: 1;
+}
+
+.widgetcontenthistory-selectleft {
+    display: flex;
+    flex: 1;
+    margin-right: 16px;
+}
+
+.widgetcontentevolution-chart {
+    display: flex;
+    flex: 1;
+    align-self: center;
+    align-items: center;
+
+    overflow: scroll;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.widgetcontentevolution-divnocover {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.widgetcontentevolution-textnocover {
+    text-align: center;
+    color: var(--grey-font);
+    font-style: var(--hoori-font);
+    font-weight: bold;
+    font-size: 18px;
+}

@@ -1,0 +1,14 @@
+@import '../../assets/vars/vars.css';
+
+.TimeInfo-container {
+    display : flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.TimeInfo-text {
+    color: var(--grey-font);
+    font-style: var(--hoori-font);
+    font-weight: bold;
+}

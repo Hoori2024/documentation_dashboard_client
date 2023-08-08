@@ -1,0 +1,59 @@
+.fieldidcard-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 22px;
+
+    background-color: var(--grey-bg);
+
+    border-width: 4px;
+    border-right-style: solid;
+    border-color: var(--dark-green);
+    border-bottom-left-radius: 30px;
+}
+
+.fieldidcard-title {
+    margin-bottom: 16px;
+    color: var(--dark-green);
+    font-weight: bold;
+    font-size: 24px;
+    font-style: var(--hoori-font);
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.fieldidcard-fieldshapecontainer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: white;
+
+    border-style: solid;
+    border-color: var(--dark-green);
+    border-width: 3px;
+    border-radius: 30px;
+}
+
+.fieldidcard-fieldshapegraphic {
+    display: flex;
+
+    align-self: center;
+/*  scale: 0.75;*/
+}
+
+.fieldidcard-fieldshapelegend {
+    padding-left: 15px;
+}
+
+.fieldidcard-legend {
+    color: var(--dark-green);
+    font-weight: bold;
+    font-size: 20px;
+    font-style: var(--hoori-font);
+    margin-top: 12px;
+}

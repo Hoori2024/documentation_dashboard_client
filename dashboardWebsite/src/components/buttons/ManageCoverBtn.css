@@ -1,0 +1,25 @@
+@import '../../assets/vars/vars.css';
+
+.ManageCoverBtn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.ManageCoverBtn-title {
+    color: var(--grey-font);
+    border-color: var(--grey-font);
+    font-style: var(--hoori-font);
+    font-weight: bold;
+}
+
+.ManageCoverBtn-button {
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+.ManageCoverBtn-button :hover {
+    opacity: 0.9;
+}

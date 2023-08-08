@@ -1,0 +1,157 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hoori - Dashboard Client components/elements/DaturaInfo.tsx</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">Hoori - Dashboard Client</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="Search docs..." class="input">
+                </div>
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"></div><div class="category"><h2>Composant</h2><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#Notif_Handler">Notif_Handler</a></li></ul></div><div class="category"><h2>Composant / buttons</h2><h3>Global</h3><ul><li><a href="global.html#AddBtn">AddBtn</a></li><li><a href="global.html#CloseBtn">CloseBtn</a></li><li><a href="global.html#HeaderBtn">HeaderBtn</a></li><li><a href="global.html#IconTextButton">IconTextButton</a></li><li><a href="global.html#ManageCoverBtn">ManageCoverBtn</a></li><li><a href="global.html#SortBtn">SortBtn</a></li></ul></div><div class="category"><h2>Composant / elements</h2><h3>Global</h3><ul><li><a href="global.html#Chart">Chart</a></li><li><a href="global.html#DaturaInfo">DaturaInfo</a></li><li><a href="global.html#FieldIdCard">FieldIdCard</a></li><li><a href="global.html#FieldShape">FieldShape</a></li><li><a href="global.html#FieldShapeLegend">FieldShapeLegend</a></li><li><a href="global.html#ImageViewer">ImageViewer</a></li><li><a href="global.html#NotificationBubble">NotificationBubble</a></li><li><a href="global.html#ProgressBar">ProgressBar</a></li><li><a href="global.html#TimeInfo">TimeInfo</a></li><li><a href="global.html#WeatherIcon">WeatherIcon</a></li><li><a href="global.html#WeatherViewer">WeatherViewer</a></li></ul></div><div class="category"><h2>Composant / footer</h2><h3>Global</h3><ul><li><a href="global.html#Footer">Footer</a></li></ul></div><div class="category"><h2>Composant / header</h2><h3>Global</h3><ul><li><a href="global.html#Navbar">Navbar</a></li><li><a href="global.html#WidgetHeader">WidgetHeader</a></li></ul></div><div class="category"><h2>Composant / lists</h2><h3>Global</h3><ul><li><a href="global.html#FieldsList">FieldsList</a></li><li><a href="global.html#ListTools">ListTools</a></li><li><a href="global.html#SearchBar">SearchBar</a></li></ul></div><div class="category"><h2>Composant / modals</h2><h3>Global</h3><ul><li><a href="global.html#AlertModal">AlertModal</a></li><li><a href="global.html#ContactUsModal">ContactUsModal</a></li><li><a href="global.html#ImageViewerModal">ImageViewerModal</a></li><li><a href="global.html#ImageViewerSignalModal">ImageViewerSignalModal</a></li></ul></div><div class="category"><h2>Composant / screens</h2><h3>Global</h3><ul><li><a href="global.html#DronePage">DronePage</a></li><li><a href="global.html#SettingPage">SettingPage</a></li></ul></div><div class="category"><h2>Composant / screens / DronePage</h2><h3>Global</h3><ul><li><a href="global.html#DroneList">DroneList</a></li><li><a href="global.html#DronePage">DronePage</a></li></ul></div><div class="category"><h2>Composant / widgets</h2><h3>Global</h3><ul><li><a href="global.html#Widget">Widget</a></li><li><a href="global.html#WidgetContentEvolution">WidgetContentEvolution</a></li><li><a href="global.html#WidgetContentHistory">WidgetContentHistory</a></li><li><a href="global.html#WidgetContentManage">WidgetContentManage</a></li><li><a href="global.html#WidgetContentScheduler">WidgetContentScheduler</a></li></ul></div><div class="category"><h2>Fonction / API</h2><h3>Global</h3><ul><li><a href="global.html#cancelScheduledCover">cancelScheduledCover</a></li><li><a href="global.html#createField">createField</a></li><li><a href="global.html#createScheduledCover">createScheduledCover</a></li><li><a href="global.html#editScheduledCover">editScheduledCover</a></li><li><a href="global.html#getAllFields">getAllFields</a></li><li><a href="global.html#getDaturaPositions">getDaturaPositions</a></li><li><a href="global.html#getFieldForecast">getFieldForecast</a></li><li><a href="global.html#getFieldsList">getFieldsList</a></li><li><a href="global.html#getMaxColList">getMaxColList</a></li><li><a href="global.html#getOldFieldForecast">getOldFieldForecast</a></li><li><a href="global.html#getPastCoversList">getPastCoversList</a></li><li><a href="global.html#getScaledFieldShape">getScaledFieldShape</a></li><li><a href="global.html#getScheduledCoversList">getScheduledCoversList</a></li><li><a href="global.html#launchCover">launchCover</a></li><li><a href="global.html#pauseCover">pauseCover</a></li><li><a href="global.html#reportPicture">reportPicture</a></li><li><a href="global.html#resumeCover">resumeCover</a></li><li><a href="global.html#setCoversForecasts">setCoversForecasts</a></li><li><a href="global.html#setPastCoverAsRead">setPastCoverAsRead</a></li><li><a href="global.html#stopCover">stopCover</a></li></ul></div><div class="category"><h2>Fonction / API / Weather</h2><h3>Global</h3><ul><li><a href="global.html#getMainWeather">getMainWeather</a></li><li><a href="global.html#getWeather5NextDays">getWeather5NextDays</a></li></ul></div><div class="category"><h2>Fonctions</h2><h3>Global</h3><ul><li><a href="global.html#fieldData">fieldData</a></li><li><a href="global.html#getFieldId">getFieldId</a></li><li><a href="global.html#logout">logout</a></li><li><a href="global.html#putFieldName">putFieldName</a></li><li><a href="global.html#userData">userData</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>components/elements/DaturaInfo.tsx</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React from 'react';
+
+/**
+ * Descriptif des pousses de datura détectées.
+ * @function DaturaInfo
+ * @category Composant / elements
+ * @param props.number {interger} nombre affiché
+ * @param props.textSize {integer} taille du texte (en pixel)
+ */
+export default function DaturaInfo(props: any) {
+    require('./DaturaInfo.css')
+
+	var text;
+
+	if (props.number == null) {
+		text = "erreur";
+	} else if (props.number &lt;= 1) {
+		text = "pousse de datura détectée";
+	} else {
+		text = "pousses de datura détectées";
+	}
+
+    return (
+		&lt;div className='DaturaInfo-container'>
+			&lt;a className='DaturaInfo-number' style={{fontSize: props.textSize}}> {props.number}&lt;/a>
+			&lt;a className="DaturaInfo-text" style={{fontSize: props.textSize}}> {text}&lt;/a>
+		&lt;/div>
+  	);
+};
+
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
+
+</body>
+</html>

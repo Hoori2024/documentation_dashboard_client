@@ -1,0 +1,39 @@
+@import '../../assets/vars/vars.css';
+
+.widgetcontentready-righthalf {
+    flex: 3; 
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+
+.widgetcontentready-infoscontainer {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 15px;
+    margin-bottom: 24px;
+
+    font-size: 30px;
+    color: var(--dark-green);
+    font-style: var(--hoori-font);
+    font-weight: bold;
+}
+
+.widgetcontentready-infotime {
+    display: flex;
+    font-size: 20px;
+    gap: 5px;
+}
+
+.widgetcontentready-btnscontainer {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.gapou {
+    display: flex;
+    flex: 0.3;
+}

@@ -1,0 +1,26 @@
+@import '../../assets/vars/vars.css';
+
+.DaturaInfo-container {
+    display : flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.DaturaInfo-text {
+    color: var(--grey-font);
+    font-style: var(--hoori-font);
+    font-weight: bold;
+    font-size: 20px;
+
+    /* text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; */
+}
+
+.DaturaInfo-number {
+    color: var(--grey-font);
+    font-style: var(--hoori-font);
+    font-weight: bold;
+    font-size: 26px;
+}

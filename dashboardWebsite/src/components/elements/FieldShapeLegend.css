@@ -1,0 +1,26 @@
+@import '../../assets/vars/vars.css';
+
+.FieldShapeLegend-generalcontainer {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.FieldShapeLegend-container {
+    display: flex;
+    align-items: center;
+    column-gap: 3px;
+}
+
+.FieldShapeLegend-square {
+    display: flex;
+    width: 15px;
+    height: 15px;
+}
+
+.FieldShapeLegend-text {
+    display: flex;
+    font-style: var(--hoori-font);
+    color: var(--dark-green);
+    font-weight: bold;
+}

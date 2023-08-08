@@ -1,0 +1,15 @@
+:root {
+    --BtnClr: #9EAD84;
+    --footer-background-color: $BtnClr;
+}
+
+.footerContainer {
+    background-color: var(--BtnClr);
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-self: flex-end;
+
+    position:relative;
+    bottom:0;
+}

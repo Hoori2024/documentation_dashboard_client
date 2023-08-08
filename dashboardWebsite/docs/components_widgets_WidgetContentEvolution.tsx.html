@@ -1,0 +1,493 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hoori - Dashboard Client components/widgets/WidgetContentEvolution.tsx</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">Hoori - Dashboard Client</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="Search docs..." class="input">
+                </div>
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"></div><div class="category"><h2>Composant</h2><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#Notif_Handler">Notif_Handler</a></li></ul></div><div class="category"><h2>Composant / buttons</h2><h3>Global</h3><ul><li><a href="global.html#AddBtn">AddBtn</a></li><li><a href="global.html#CloseBtn">CloseBtn</a></li><li><a href="global.html#HeaderBtn">HeaderBtn</a></li><li><a href="global.html#IconTextButton">IconTextButton</a></li><li><a href="global.html#ManageCoverBtn">ManageCoverBtn</a></li><li><a href="global.html#SortBtn">SortBtn</a></li></ul></div><div class="category"><h2>Composant / elements</h2><h3>Global</h3><ul><li><a href="global.html#Chart">Chart</a></li><li><a href="global.html#DaturaInfo">DaturaInfo</a></li><li><a href="global.html#FieldIdCard">FieldIdCard</a></li><li><a href="global.html#FieldShape">FieldShape</a></li><li><a href="global.html#FieldShapeLegend">FieldShapeLegend</a></li><li><a href="global.html#ImageViewer">ImageViewer</a></li><li><a href="global.html#NotificationBubble">NotificationBubble</a></li><li><a href="global.html#ProgressBar">ProgressBar</a></li><li><a href="global.html#TimeInfo">TimeInfo</a></li><li><a href="global.html#WeatherIcon">WeatherIcon</a></li><li><a href="global.html#WeatherViewer">WeatherViewer</a></li></ul></div><div class="category"><h2>Composant / footer</h2><h3>Global</h3><ul><li><a href="global.html#Footer">Footer</a></li></ul></div><div class="category"><h2>Composant / header</h2><h3>Global</h3><ul><li><a href="global.html#Navbar">Navbar</a></li><li><a href="global.html#WidgetHeader">WidgetHeader</a></li></ul></div><div class="category"><h2>Composant / lists</h2><h3>Global</h3><ul><li><a href="global.html#FieldsList">FieldsList</a></li><li><a href="global.html#ListTools">ListTools</a></li><li><a href="global.html#SearchBar">SearchBar</a></li></ul></div><div class="category"><h2>Composant / modals</h2><h3>Global</h3><ul><li><a href="global.html#AlertModal">AlertModal</a></li><li><a href="global.html#ContactUsModal">ContactUsModal</a></li><li><a href="global.html#ImageViewerModal">ImageViewerModal</a></li><li><a href="global.html#ImageViewerSignalModal">ImageViewerSignalModal</a></li></ul></div><div class="category"><h2>Composant / screens</h2><h3>Global</h3><ul><li><a href="global.html#DronePage">DronePage</a></li><li><a href="global.html#SettingPage">SettingPage</a></li></ul></div><div class="category"><h2>Composant / screens / DronePage</h2><h3>Global</h3><ul><li><a href="global.html#DroneList">DroneList</a></li><li><a href="global.html#DronePage">DronePage</a></li></ul></div><div class="category"><h2>Composant / widgets</h2><h3>Global</h3><ul><li><a href="global.html#Widget">Widget</a></li><li><a href="global.html#WidgetContentEvolution">WidgetContentEvolution</a></li><li><a href="global.html#WidgetContentHistory">WidgetContentHistory</a></li><li><a href="global.html#WidgetContentManage">WidgetContentManage</a></li><li><a href="global.html#WidgetContentScheduler">WidgetContentScheduler</a></li></ul></div><div class="category"><h2>Fonction / API</h2><h3>Global</h3><ul><li><a href="global.html#cancelScheduledCover">cancelScheduledCover</a></li><li><a href="global.html#createField">createField</a></li><li><a href="global.html#createScheduledCover">createScheduledCover</a></li><li><a href="global.html#editScheduledCover">editScheduledCover</a></li><li><a href="global.html#getAllFields">getAllFields</a></li><li><a href="global.html#getDaturaPositions">getDaturaPositions</a></li><li><a href="global.html#getFieldForecast">getFieldForecast</a></li><li><a href="global.html#getFieldsList">getFieldsList</a></li><li><a href="global.html#getMaxColList">getMaxColList</a></li><li><a href="global.html#getOldFieldForecast">getOldFieldForecast</a></li><li><a href="global.html#getPastCoversList">getPastCoversList</a></li><li><a href="global.html#getScaledFieldShape">getScaledFieldShape</a></li><li><a href="global.html#getScheduledCoversList">getScheduledCoversList</a></li><li><a href="global.html#launchCover">launchCover</a></li><li><a href="global.html#pauseCover">pauseCover</a></li><li><a href="global.html#reportPicture">reportPicture</a></li><li><a href="global.html#resumeCover">resumeCover</a></li><li><a href="global.html#setCoversForecasts">setCoversForecasts</a></li><li><a href="global.html#setPastCoverAsRead">setPastCoverAsRead</a></li><li><a href="global.html#stopCover">stopCover</a></li></ul></div><div class="category"><h2>Fonction / API / Weather</h2><h3>Global</h3><ul><li><a href="global.html#getMainWeather">getMainWeather</a></li><li><a href="global.html#getWeather5NextDays">getWeather5NextDays</a></li></ul></div><div class="category"><h2>Fonctions</h2><h3>Global</h3><ul><li><a href="global.html#fieldData">fieldData</a></li><li><a href="global.html#getFieldId">getFieldId</a></li><li><a href="global.html#logout">logout</a></li><li><a href="global.html#putFieldName">putFieldName</a></li><li><a href="global.html#userData">userData</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>components/widgets/WidgetContentEvolution.tsx</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { useState, useEffect} from 'react';
+import dayjs, {Dayjs} from 'dayjs';
+
+import Select from '@mui/material/Select';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+
+import Chart from '../elements/Chart';
+
+import FieldIdCard from '../elements/FieldIdCard';
+import FieldsList from '../lists/FieldsList';
+import {Field, FieldStats, DaturaPositions, WeedType} from '../../architecture/architecture';
+
+import {sortFieldByName, getNamed} from '../../assets/utils';
+
+export interface Span {
+  text: string,
+  months: number,
+};
+
+export interface Type {
+  text: string,
+  type: WeedType | null,
+};
+
+const BLANK_STATS = [
+  { 
+    timespan: 1,
+    data: [],
+    positions: null,
+  },
+  { 
+    timespan: 3,
+    data: [],
+    positions: null,
+  },
+  { 
+    timespan: 6,
+    data: [],
+    positions: null,
+  },
+  { 
+    timespan: 12,
+    data: [],
+    positions: null,
+  },
+]
+
+/**
+ * Widget d'évolution
+ * @function WidgetContentEvolution
+ * @category Composant / widgets
+ * @param props.fields {Field[]} tableau de champs
+ * @param props.updateButtons {} ?
+ */
+export default function WidgetContentEvolution(props: any) {
+  require('./WidgetContentEvolution.css');
+
+  const SPAN_OPTIONS : Span[] = [{text: '1 mois', months: 1}, {text: '3 mois', months: 3}, {text: '6 mois', months: 6}, {text: '1 an', months: 12}];
+  const TYPE_OPTIONS : Type[] = [{text: 'Toutes les adventices', type: null}, {text: 'Datura', type: WeedType.DATURA}, {text: 'Ambroisie', type: WeedType.AMBROISIE}, {text: 'Type inconnu', type: WeedType.UNKNOWN}];
+
+  const [currentPage, setCurrentPage] = useState(0);
+  const [field, setField] = useState&lt;Field | null>(null);
+  
+  //const [fields, setFields] = useState(props.fields);
+  const [span, setSpan] = useState&lt;Span | null>(getSpanByLabel('1 an'));
+  const [weedType, setWeedType] = useState&lt;Type | null>(getTypeByLabel('Toutes les adventices'));
+  const [daturaPositions, setDaturaPositions] = useState&lt;DaturaPositions | null>(null);
+  const [fieldStats, setFieldStats] = useState&lt;FieldStats[]>(BLANK_STATS);
+
+  const [displayedFields, setDisplayedFields] = useState(props.fields);
+
+  const [searchFilter, setSearchFilter] = useState&lt;string | null>(null);
+  const [sortMode, setSortMode] =
+  useState&lt;{idx: number, ascend: boolean}>({idx: 0, ascend: true});
+
+/*   useEffect(() => {
+    setDisplayedFields(props.fields)
+  }, [props.fields]); */
+  
+  // Filtering and sorting the list when needed:
+  
+  useEffect(() => {
+      var filteredList = getNamed(props.fields, searchFilter);
+      var sortingFunction = buttons[sortMode.idx].sortFunction;
+      setDisplayedFields(sortingFunction(filteredList, sortMode.ascend))
+  }, [searchFilter, sortMode, props.fields]);
+
+  useEffect(() => {
+    setDisplayedFields(sortFieldByName(props.fields, true));
+  }, [currentPage]);
+
+  useEffect(() => {
+    if (field != null) {
+      let newFieldStats = generateFieldStats(field);
+      setFieldStats(newFieldStats ?? BLANK_STATS);
+      let newPositions = getDaturaPositions(); // TODO
+      setDaturaPositions(newPositions);
+    }
+  }, [span, weedType, field]);
+  
+  let buttons = [
+    {
+      title: 'Nom',
+      onClick: (asc: boolean) => {
+        setSortMode({idx: 0, ascend: asc});
+      },
+      sortFunction: sortFieldByName,
+      disabled: false,
+    },
+];
+
+function getDaturaPositions() {
+  if (field == null)
+    return null;
+  let stats = getDaturaByTimeSpan(fieldStats);
+  if (!stats)
+    return null
+  return stats.positions;
+}
+
+function onChangeSearch(search: string) {
+  setSearchFilter(search);
+}
+
+  function getSpanByLabel(label: string) {
+    for (var i: number = 0; i &lt; SPAN_OPTIONS.length; i++) {
+      if (label == SPAN_OPTIONS[i].text) {
+        return SPAN_OPTIONS[i];
+      }
+    }
+    return null;
+  }
+
+  function getTypeByLabel(label: string) {
+    for (var i: number = 0; i &lt; TYPE_OPTIONS.length; i++) {
+      if (label == TYPE_OPTIONS[i].text) {
+        return TYPE_OPTIONS[i];
+      }
+    }
+    return null;
+  }
+
+  function getStatIdxBySpan(span: Span | null) {
+    if (!field || !fieldStats || !span)
+      return 0
+    for (var i: number = 0; i &lt; fieldStats.length; i++) {
+      if (span.months == SPAN_OPTIONS[i].months)
+        return i;
+    }
+    return 0;
+  }
+
+  function handleChooseSpan(event: any, value: any) {
+    var newSpan = getSpanByLabel(value.props.value);
+    setSpan(newSpan);
+  }
+
+  function handleChooseType(event: any, value: any) {
+    var newType = getTypeByLabel(value.props.value);
+    setWeedType(newType);
+  }
+
+  function handleClickOnField(id: string) {
+    setNewField(id);
+    setCurrentPage(1);
+    props.updateButtons([{
+      title: 'Retour',
+      onClick: handleClickBackBtn
+    }]);
+  }
+
+  function handleClickBackBtn() {
+    setNewField(null);
+    setCurrentPage(0);
+    props.updateButtons([])
+  }
+
+  function setNewField(id: string | null) {
+    let newField: Field | null | undefined = props.fields.find((f: any) => { return f.id == id });
+    if (newField == undefined)
+      newField = null;
+    setField(newField);
+  }
+
+  function getDaturaByTimeSpan(fieldStats: FieldStats[] | null) {
+    if (fieldStats == null)
+      return null;
+    for (let i = 0; i &lt; fieldStats.length; i++) {
+      if (span &amp;&amp; fieldStats[i].timespan == span.months) {
+        if (fieldStats[i] != undefined)
+          return fieldStats[i];
+      }
+    }
+    return null;
+  }
+
+  function generateFieldStats(field: Field) {
+    let pastCovers = field.pastCovers;
+    if (pastCovers == null || pastCovers.length == 0)
+        return null;
+
+    let stats: FieldStats[] = [];
+    let periods: number[] = [1, 3, 6, 12];
+
+    for (let i = 0; i &lt; periods.length; i++) {
+        let newStats: FieldStats = {
+            timespan: periods[i],
+            data: [],
+            positions: null, // TODO
+        }
+        stats.push(newStats);
+    };
+
+    pastCovers.forEach(cover => {
+        for (let i = 0; i &lt; periods.length; i++) {
+
+            // If the cover is in this period:
+            if (cover.startDate?.isAfter(dayjs().subtract(periods[i], 'months'))) {
+
+                // Adding the cover to the graph:
+                if (cover.nbDatura != null)
+                    stats[i].data.push({date: cover.startDate, nbSprouts: cover.nbDatura});
+
+                // Adding the positions to the map:
+                if (stats[i].positions == null &amp;&amp; pastCovers != null) { // Initializing the map if needed
+                    stats[i].positions = clonePositionsBlank(pastCovers[0].daturaPositions);
+                }
+                if (stats[i].positions == null)
+                    return;
+                
+                let positionsInCover = cover.daturaPositions ?? [[]];
+                for (let j = 0; j &lt; positionsInCover.length; j++)
+                    for (let k = 0; k &lt; positionsInCover[j].length; k++) {
+                        let positionsInStats: DaturaPositions = stats[i].positions ?? [[]];
+                        positionsInStats[j][k] += (positionsInCover[j][k] ?? 0);
+                    }
+            }
+        };
+    });
+
+    return stats;
+}
+
+function clonePositionsBlank(array: number[][] | null) {
+  if (array == null)
+      return null;
+
+  let newArray: number[][] = [];
+  array.forEach(list => {
+      let newList: number[] = Array(list.length).fill(0);
+      newArray.push(newList);
+  });
+  return newArray;
+}
+
+  // Fields list page
+  if (props.fields &amp;&amp; currentPage == 0)
+    return (
+      &lt;FieldsList
+        buttons={buttons}
+        onChangeSearch={onChangeSearch}
+        list={displayedFields}
+        fields={props.fields}
+        onClick={handleClickOnField}
+      />
+    );
+
+
+  // Field stats page
+  if (field &amp;&amp; currentPage == 1) {
+    return (
+        &lt;div className="widgetcontentevolution-maincontainer">
+            &lt;FieldIdCard
+              name={field?.name}
+              shape={field.shape}
+              datura={fieldStats[getStatIdxBySpan(span)].positions}
+              defaultLegend
+              legend={'Pousses de datura détectées sur ' + span?.text}
+            />
+            {!fieldStats || fieldStats.length == 0
+              ? &lt;div className="widgetcontentevolution-righthalf"> 
+              &lt;div className="widgetcontentevolution-divnocover">
+                &lt;div className="widgetcontentevolution-textnocover">
+                  Aucune statistique à afficher pour ce champ
+                &lt;/div>
+              &lt;/div>
+              &lt;/div> 
+              :
+                &lt;div className="widgetcontentevolution-righthalf">
+                  &lt;div className="widgetcontentevolution-text" >
+                    Évolution du nombre de pousses de datura détectées
+                  &lt;/div>
+
+                  &lt;FormControl className="widgetcontenthistory-formcontrol"
+                    sx={{
+                      
+                      /* '&amp; .MuiFormControl-formControl': {
+                        color: 'red',
+                        backgroundColor: 'blue',
+                        borderRadius: '30px',
+                      }, */
+                    }}
+                    fullWidth>
+
+                    &lt;Select
+                      className="widgetcontenthistory-selectleft"
+                      labelId="demo-multiple-name-label"
+                      id="demo-multiple-name"
+                      value={span?.text}
+                      onChange={handleChooseSpan}
+                      sx={{
+                        height: '40px',
+                        paddingTop: '4px',
+                        margin: '0px',
+                        color: 'var(--grey-font)',
+                        fontStyle: 'var(--hoori-font)',
+                        fontWeight: 'bold',
+                        fontSize: '12px',
+                      }}>
+                      {SPAN_OPTIONS.map((item) => (
+                        &lt;MenuItem
+                          key={item.months}
+                          value={item.text}>
+                          {item.text}
+                        &lt;/MenuItem>
+                      ))}
+                    &lt;/Select>
+
+                    &lt;Select
+                      className="widgetcontenthistory-selectright"
+                      labelId="demo-multiple-name-label"
+                      id="demo-multiple-name"
+                      value={weedType?.text}
+                      onChange={handleChooseType}
+                      sx={{
+                        height: '40px',
+                        paddingTop: '4px',
+                        margin: '0px',
+                        color: 'var(--grey-font)',
+                        fontStyle: 'var(--hoori-font)',
+                        fontWeight: 'bold',
+                        fontSize: '12px',
+                      }}>
+                      {TYPE_OPTIONS.map((item) => (
+                        &lt;MenuItem
+                          key={item.type}
+                          value={item.text}>
+                          {item.text}
+                        &lt;/MenuItem>
+                      ))}
+                    &lt;/Select>
+
+                  &lt;/FormControl>
+
+                  &lt;div className="widgetcontentevolution-chart">
+                    &lt;Chart
+                      data={fieldStats[getStatIdxBySpan(span)].data}
+                    />
+                  &lt;/div>
+                &lt;/div>
+            }
+        &lt;/div>
+    );
+  }
+  return &lt;div> &lt;/div>
+};</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
+
+</body>
+</html>

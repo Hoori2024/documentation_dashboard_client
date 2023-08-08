@@ -1,0 +1,125 @@
+@import '../../assets/vars/vars.css';
+
+.ContactUsModal-modal {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-style: none;
+	overflow: scroll;
+}
+
+.ContactUsModal-maincontainer {
+	display: flex;
+
+	flex-direction: column;
+	align-items: center;
+
+	background-color: var(--grey-bg);
+	border-color: var(--dark-green);
+	border-width: 4px;
+	border-style: solid;
+	border-radius: 30px;
+	padding: 12px;
+
+	min-width: 60vmin;
+	min-height: auto;
+	max-width: 40vmax;
+	max-height: auto;
+}
+
+.ContactUsModal-title {
+    font-family: var(---hoori-font);
+    color: var(--grey-font);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.ContactUsModal-message {
+	font-family: var(---hoori-font);
+    color: var(--grey-font);
+    font-size: 22px;
+	font-weight: bold;
+}
+
+.ContactUsModal-bigmessage {
+	font-family: var(---hoori-font);
+    color: var(--grey-font);
+    font-size: 22px;
+	font-weight: bold;
+}
+
+.ContactUsModal-upcontainer {
+	display: flex;
+	flex: 0.5;
+	flex-direction: column;
+	gap: 18px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 30px;
+}
+
+.ContactUsModal-downcontainer {
+	display: flex;
+	flex: 0.5;
+	flex-direction: column;
+	gap: 12px;
+	align-items: center;
+	padding-bottom: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.ContactUsModal-closectn {
+	display: flex;
+	width: 100%;
+	justify-content: end;
+}
+
+.ContactUsModal-email {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+
+	gap: 10px;
+
+	font-family: var(---hoori-font);
+    color: var(--grey-font);
+    font-size: 26px;
+
+	border: 2px solid;
+	border-color: var(--grey-font);
+    border-radius: 18px;
+
+	padding: 16px;
+	line-break: anywhere;
+}
+
+.ContactUsModal-btn {
+	display: flex;
+	font-family: var(---hoori-font);
+    color: var(--grey-bg);
+    font-size:26px;
+	font-weight: bold;
+
+	background-color: var(--dark-green);
+
+	border: 2px solid;
+	border-color: var(--dark-green);
+    border-radius: 18px;
+
+	padding: 16px;
+}
+
+.ContactUsModal-btn:hover {
+	opacity: 0.9;
+	cursor: pointer;
+}
+
+.ContactUsModal-emailimg {
+	width: 18px;
+	cursor: pointer;
+}
+
+.ContactUsModal-emailimg:hover{
+	opacity: 10;
+}

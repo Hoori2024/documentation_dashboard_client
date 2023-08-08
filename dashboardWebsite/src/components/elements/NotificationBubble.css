@@ -1,0 +1,28 @@
+.notificationbubble-maincontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  width: 36px;
+  border-radius: 22px;
+  background-color: white;
+  border-width: 4px;
+  border: solid 4px var(--dark-green);
+}
+
+.notificationbubble-textsmall {
+  margin-bottom: 1px;
+  margin-left: 1px;
+  color: var(--dark-green);
+  font-size: 18px;
+  font-family: var(---hoori-font);
+  font-weight: bold;
+}
+
+.notificationbubble-textnormal {
+  margin-bottom: 2px;
+  color: var(--dark-green);
+  font-size: 20px;
+  font-family: var(---hoori-font);
+  font-weight: bold;
+}

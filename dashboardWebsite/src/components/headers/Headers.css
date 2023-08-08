@@ -1,0 +1,28 @@
+@import '../../assets/vars/vars.css';
+
+
+.navbarContainer {
+    display: flex;
+    width: 100%;
+    min-width: 720px;
+    background-color: var(--dark-green);
+    align-items: stretch;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    margin: 24px;
+    flex: 1;
+}
+
+.LogoHoori {
+    width: 15rem;
+}
+
+.header-btns {
+    align-self: center;
+    padding-right: 16px;
+    flex-wrap: nowrap;
+} 

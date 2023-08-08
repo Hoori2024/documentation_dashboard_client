@@ -1,0 +1,117 @@
+:root {
+    --Card1Color: #D5D1C6;
+    --Card2Color: #9EAD84;
+    --Card3Color: #324c40;
+}
+
+.cardBox {
+    width: 30rem;
+    background-color: var(--Card1Color);
+    text-align: center;
+    border-radius: 0.7rem;
+}
+
+.card-headerBox {
+    background-color: var(--Card3Color);
+    height: 10%;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    border-top-right-radius: 0.7rem;
+    border-top-left-radius: 0.7rem;
+}
+
+.cardTitle {
+    width: 25rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0rem;
+    padding-bottom: 0.7rem;
+    font-size: 1.5rem;
+    
+
+}
+
+.media-contentBox {
+    background-color: var(--Card1Color);
+    border-radius: 0.7rem;
+}
+
+.contentBox {
+    background-color:var(--Card1Color);
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}
+
+.buttonBox {
+    background-color: var(--Card1Color);
+    width: 13rem;
+    height: 5rem;
+    
+}
+
+.imgBox {
+    max-width: 11rem;
+}
+
+.labelBox {
+    text-align: left;
+}
+
+.bloc {
+    position: relative;
+    height: 6rem;
+}
+
+.blocMessage {
+    position: relative;
+    height: 21rem;
+}
+
+.ConnectButton {
+    position: relative;
+    background-color: var(--Card2Color);
+    border-radius: 1rem;
+    font-size: 18px;
+    border-style: none;
+    padding: 0.5rem;
+    width: 15rem;
+    margin-bottom: 2rem;
+}
+
+hr.solid {
+  border-top: 0.1rem solid #848484;
+}
+
+.input {
+    width: 80%;
+    background-color: #FFFFFF;
+}
+
+.inputMessage {
+    width: 80%;
+    background-color: #FFFFFF;
+}
+
+
+
+.buttonGoogle {
+    border-style: none;
+    background-color: var(--Card1Color) ;
+}
+
+.linkButton {
+    text-decoration: none;
+    color: 'inherit';
+}
+
+.buttonClose {
+    position:absolute;
+    margin-right: 10rem;
+    margin-top: 0.75rem;
+    margin-left: 26rem;
+}

@@ -1,0 +1,28 @@
+@import '../../assets/vars/vars.css';
+
+.progressbar-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.progressbar-text {
+    color: var(--grey-font);
+    font-style: var(--hoori-font);
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.progressbar-line {
+    background-color: var(--grey-font);
+    width: 50%;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.progressbar-frame {
+    background-color: rgb(211, 211, 211);
+    width: auto;
+    height: 20px;
+    border-radius: 10px;
+}

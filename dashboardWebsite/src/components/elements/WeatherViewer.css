@@ -1,0 +1,65 @@
+.weatherviewer-divnoweather {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.weatherviewer-textnoweather {
+    text-align: center;
+    color: var(--grey-font);
+    font-style: var(--hoori-font);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.weatherviewer-button {
+    border-style: none;
+    background-color: white;
+}
+
+.weatherviewer-arrows {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.weatherviewer-arrows:hover {
+    opacity: 80%;
+}
+
+.weatherviewer-arrowsdisabled {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    opacity: 30%;
+}
+
+.weatherviewer-weatherView {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 600px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.weatherviewer-weatherHour {
+    margin-bottom: 12px;
+    color: var(--grey-font);
+    font-weight: bold;
+    font-size: 22px;
+    font-style: var(--hoori-font);
+}
+
+.weatherviewer-weatherelem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 22px;
+    margin-right: 22px;
+}

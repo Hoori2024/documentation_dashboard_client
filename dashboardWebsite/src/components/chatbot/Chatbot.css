@@ -1,0 +1,23 @@
+
+.chatbot {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 17rem;
+    height: 20rem;
+    background-color: #D5D1C6;
+    padding: 0.2rem;
+}
+
+.chatbotButton {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.closeButton {
+    position: fixed;
+    right: -13.5rem;
+    bottom: 19.5rem;
+    z-index: 20000000;
+}

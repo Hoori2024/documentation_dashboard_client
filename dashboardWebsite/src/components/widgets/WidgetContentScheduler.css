@@ -1,0 +1,63 @@
+@import '../../assets/vars/vars.css';
+
+.widgetcontentscheduler-maincontainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex: 1;
+}
+
+.widgetcontentscheduler-righthalf {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.widgetcontentscheduler-timeinfo {
+    margin: 16px;
+    margin-top: 24px;
+}
+
+.widgetcontentscheduler-formcontrolparent {
+    display: flex;
+    flex: 1;
+    padding: 16px;
+    padding-top: 16px;
+    padding-bottom: 0px;
+}
+
+.widgetcontentscheduler-datetimepicker {
+    flex-direction: row;
+    width: 100%;
+}
+
+.widgetcontentscheduler-weathercontainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.widgetcontentscheduler-divnoweather {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.widgetcontentscheduler-textnoweather {
+    text-align: center;
+    color: var(--grey-font);
+    font-style: var(--hoori-font);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.customDatePickerWidth {
+   width: 100%;
+}
+
+.customTimePickerWidth {
+   width: 100%;
+}
+

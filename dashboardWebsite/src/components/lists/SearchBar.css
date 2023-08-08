@@ -1,0 +1,36 @@
+@import '../../assets/vars/vars.css';
+
+.SearchBar-input {
+    display: flex;
+    border-radius: 18px;
+    border-width: 2px;
+    border-color: var(--grey-font);
+    border-style: solid;
+
+    height: 30px;
+
+    padding: 4px;
+
+    color: var(--grey-font);
+
+    font-style: var(--hoori-font);
+    font-size: 15px;
+    font-weight: bold;
+
+    width: 90%;
+}
+
+input[type=text]:focus {
+    padding-left: 40px;
+    outline: none;
+    border-style: solid;
+    border-color: var(--grey-font);
+}
+
+input[type=text] {
+    background-image: url('../../assets/image/search.png');
+    background-size: 16px;
+    background-position: 10px 6px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+  }

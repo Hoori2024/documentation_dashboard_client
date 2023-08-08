@@ -1,0 +1,9 @@
+.CloseBtn-closectn :hover{
+	opacity: 0.7;
+}
+
+.CloseBtn-closebutton {
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+}

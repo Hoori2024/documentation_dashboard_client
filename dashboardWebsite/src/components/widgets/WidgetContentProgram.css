@@ -1,0 +1,47 @@
+@import '../../assets/vars/vars.css';
+
+.widgetcontentprogram-righthalf {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.widgetcontentprogram-infoscontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px;
+    color: var(--dark-green);
+    font-style: var(--hoori-font);
+    font-weight: bold;
+}
+
+.widgetcontentprogram-infosubcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.widgetcontentprogram-infotitle {
+    display: flex;
+    font-size: 30px;
+}
+
+.widgetcontentprogram-infotime {
+    display: flex;
+    font-size: 21px;
+    display: flex;
+    gap: 5px;
+}
+
+.widgetcontentprogram-btnscontainer {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.gapou {
+    display: flex;
+    flex: 0.3;
+}
